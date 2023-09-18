@@ -1,9 +1,9 @@
-sleep.timer = null
-
-function sleep (ms: number) {
-  return new Promise(resolve => {
-    sleep.timer = setTimeout(resolve, ms)
-  })
+function endlessLoop (ms: number) {
+  const d1 = new Date().getTime()
+  while (true) {
+    const d2 = new Date().getTime()
+    if (d2 - d1 >= ms) break
+  }
 }
 
-export { sleep }
+export { endlessLoop }

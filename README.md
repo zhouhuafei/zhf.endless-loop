@@ -2,31 +2,12 @@
 
 ## 使用案例
 ```typescript
-import { sleep } from 'zhf.sleep'
+import { endlessLoop } from 'zhf.endless-loop'
 
-async function fn () {
-  await sleep(3000)
+function fn () {
+  endlessLoop(3000) // 同步死循环3秒
   console.log('3秒后会打印这条日志')
 }
 
 fn()
-
-// 清理定时器，如此，3秒后则不会打印上述日志。
-// clearTimeout(sleep.timer)
-```
-```typescript
-import { sleep } from 'zhf.sleep'
-
-let timer = null
-async function fn () {
-  const promise = sleep(3000)
-  timer = sleep.timer
-  await promise
-  console.log('3秒后会打印这条日志')
-}
-
-fn()
-
-// 清理定时器，如此，3秒后则不会打印上述日志。
-// clearTimeout(timer)
 ```

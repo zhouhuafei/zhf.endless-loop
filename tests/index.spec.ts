@@ -1,9 +1,9 @@
-import { sleep } from '@root/src'
+import { endlessLoop } from '@root/src'
 
-test('sleep 3000ms', async () => {
+test('endlessLoop 3000ms', () => {
   const ms = 3000
   const d1 = new Date().getTime()
-  await sleep(ms)
+  endlessLoop(ms)
   const d2 = new Date().getTime()
   expect(d2 - d1).toBeGreaterThanOrEqual(3000)
 })

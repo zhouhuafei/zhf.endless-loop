@@ -1,7 +1,7 @@
 {
-  "name": "zhf.sleep",
+  "name": "zhf.endless-loop",
   "version": "1.0.0",
-  "description": "zhf.sleep",
+  "description": "zhf.endless-loop",
   "main": "./dist/index.js",
   "files": [
     "dist"
@@ -25,15 +25,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zhouhuafei/zhf.sleep.git"
+    "url": "git+https://github.com/zhouhuafei/zhf.endless-loop.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/zhouhuafei/zhf.sleep/issues"
+    "url": "https://github.com/zhouhuafei/zhf.endless-loop/issues"
   },
-  "homepage": "https://github.com/zhouhuafei/zhf.sleep#readme",
+  "homepage": "https://github.com/zhouhuafei/zhf.endless-loop#readme",
   "devDependencies": {
     "@babel/plugin-transform-typescript": "^7.16.8",
     "@babel/preset-env": "^7.16.11",
